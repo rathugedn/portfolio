@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Devindi Rathuge</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<nav class="navbar">
+    <a href="#contact" class="logo">DEVI.</a>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-list" id="nav-list">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+</nav>  
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Let's <span>Connect</span></h2>
+    <div class="subheading">Open to internship opportunities and collaborative projects</div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3><i class='bx bx-briefcase-alt'></i> Career Interests</h3>
+        <ul>
+          <li><i class='bx bx-check'></i> Machine Learning Internships</li>
+          <li><i class='bx bx-check'></i> Full-Stack Development Roles</li>
+          <li><i class='bx bx-check'></i> Research Collaborations</li>
+          <li><i class='bx bx-check'></i> University Projects</li>
+        </ul>
+      </div>
+
+      <form action="https://formspree.io/f/xdkdyrvv" method="POST" class="contact-form">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="organization" placeholder="Company/University" required>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="position" placeholder="Internship/Project Role">
+        </div>
+        <textarea name="message" placeholder="Tell me about the opportunity..." rows="6" required></textarea>
+        <input type="hidden" name="_subject" value="New Opportunity Inquiry">
+        <button type="submit" class="btn">Send Opportunity <i class='bx bx-paper-plane'></i></button>
+      </form>
+    </div>
+
+    <div class="direct-contact">
+      <a href="nethminirathuge4@gmail.com" class="contact-link">
+        <i class='bx bx-envelope'></i> Email me directly
+      </a>
+      <p class="response-time"><i class='bx bx-time'></i> Typically responds within 24 hours</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="home.html" class="logo">DEVI.</a>
+        <p>Building digital experiences with passion and precision</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Devindi Rathuge. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
